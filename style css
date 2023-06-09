@@ -8,7 +8,6 @@ font-family: Verdana;}
 
 p{
   color: #58615e; font-size: 15px;
-
 }
 a{ color:#42196e; text-decoration:none; font-family:Arial}
 .img-res{width:50%; height: auto;}
