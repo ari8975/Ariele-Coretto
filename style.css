@@ -1,45 +1,222 @@
-*{box-sizing:border-box;}
-
-body,html {padding: 0;margin: 0;}
-
-body{
-background: #b8d4ca;
-font-family: Verdana;}
-
-p{
-  color: #58615e; font-size: 15px;
-
+:root {
+  --green: #678024;
+  --snow:#fffafa;
+  --Ivory:#FFFFF0;
+  --DarkSlateGray:#2F4F4F;
+  --Gainsboro:#DCDCDC;
+  --grey: #454839;
+  --light-grey: #A9AD9B;
+  --background-green-opacity: rgba(103, 128, 36, 0.4);
+  --background-snow: rgb(255,250,250);
+  --social-blu: #0d6efd;
+  --social-red: #dc3545;
 }
-a{ color:#42196e; text-decoration:none; font-family:Arial}
-.img-res{width:50%; height: auto;}
 
-.logo{text-align:center; width: 100%; display:block; font-size:18px;}
+body {
+  background: var(--Ivory);
+  font-family: Verdana;}
+#logo-social {width: 70px;/ height: auto;}
 
-h1 {color: green}
-h2{color:blue}
-h3 {color:yellow}
+h1,
+h2,
+h4,
+h5{color:DarkSlateGray;
+  font-family:sans-serif;
+  },
+h6,
+p {
+  color: var(--DarkSlateGray);testo
+  text-align: center;
+}
+#logo-che{ width: 120px; height: auto; }
+.odd-container {
+  margin: 6px;
+  background-color: var(--background-snow-opacity);
+}
 
-.container{padding: 18px}
+.even-container {
+  margin: 5px;
+  background-color: var(--background-green-opacity);
+}
 
-header{background-color:#fff; padding:15px 15px 15px 15px; margin: 10px; border:3px solid green}
+.container-space {
+  height: 70px;
+}
+
+.odd-container,
+.even-container {
+  padding: 20px;
+}
+
+.contatti-container {
+  margin-bottom: 70px;
+}
+
+.navbar-dark {
+  background-color: var(--DarkSlateGray);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link.active {
+  color: var(--Ivory);  testo barra
+}
+
+.dropdown-menu {
+  animation: 0.5s slideup;
+}
+
+.card {
+  background-color: var(--Gainsboro);color:DarkSlateGray;font-size:17px;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(10%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*** SOCIAL ***/
+.bi-facebook,
+.bi-linkedin {
+  color: var(--social-blu);
+}
+
+.bi-instagram {
+  color: var(--social-red);
+}
+
+/*** CAROUSEL ***/
+.carousel-gallery .carousel-inner .carousel-item>img {
+  height: auto;
+}
+
+.carousel-servizi .carousel-inner .carousel-item .carousel-item>img{
+  height: 100%;
+}
+
+/*** FOOTER ***/
+a {
+  color: var(--grey);
+}
+
+a:hover {
+  color: var(--DarkSlateGray);
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--DarkSlateGray);
+  text-shadow: none;
+}
+
+.copyright-box {
+  text-align: left;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: var(--Gainsboro)
+}
+
+.footer-item {
+  color: var(--DarkSlateGray);
+}
+
+.footer-column:not(:first-child) {
+  padding-top: 2rem;
+
+  @media (min-width: 768px) {
+    padding-top: 0rem;
+  }
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0.1rem 0;
+}
+
+span.nav-link {
+  color: var(--DarkSlateGray);
+}
+
+span.footer-title,
+a.footer-title {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--green);
+  font-family:Verdana;
+  text-transform: uppercase;
+}
+
+.fas {
+  margin-right: 0.5rem;
+}
 
 
-#menuprincipale{text-align:center; width: 100%;display:block; font-size:10px;}
+ul {
+  display: inline-block;
 
-#menuprincipale li{display:inline}
-
-#menuprincipale li {border:1px solid white; margin:12px}
-
-.grid{display: flex; flex-wrap: wrap;}
-.colonna {width: 100%%;
-  padding: 25px}
-  {border: 1px solid purple}
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
 
 
-@media (min-width:768px)and (max-width:1023px) {
-.colonna {width: 100%;}
+ul.social-buttons {
+  margin-bottom: 0;
+}
 
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: var(--DarkSlateGray);
+}
 
+ul.social-buttons li a {
+  font-size: 20px;
+  font-family: fantasy;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: var(--green);
+  border-radius: 100%;
+  outline: 0;
+}
 
-footer{background:#fff; padding: 20px}
-footer p{ color: grey; font-size:8px; font-style:Arial}
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family:"fantasy";
+}
+
+.copyright {
+  color: var(--DarkSlateGray);
+}
+
+.fa-ellipsis-h {
+  color: var(--DarkSlateGray);
+  padding: 2rem 0;
+}
+
+.img-servizi{
+  padding: 2px;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.card-title{
+  min-width: 150px;
+}
