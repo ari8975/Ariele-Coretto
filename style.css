@@ -13,21 +13,20 @@
 }
 
 body {
-  background: var(--Ivory);
-  font-family: Verdana;}
+  background: var(--Ivory);}
+
 #logo-social {width: 70px;/ height: auto;}
 
 h1,
 h2,
 h4,
 h5{color:DarkSlateGray;
-  font-family:sans-serif;
+  font-family: 'Croissant One', cursive;
   },
-h6,
-p {
-  color: var(--DarkSlateGray);testo
-  text-align: center;
-}
+h6{color: var(--DarkSlateGray);testo
+  text-align: center; font-size:30px},
+p {color: var(--DarkSlateGray);testo
+  text-align: center;}
 #logo-che{ width: 120px; height: auto; }
 .odd-container {
   margin: 6px;
@@ -36,11 +35,12 @@ p {
 
 .even-container {
   margin: 5px;
-  background-color: var(--background-green-opacity);
+  background-color: var(--background-green-opacity)
+  ;
 }
 
 .container-space {
-  height: 70px;
+  height: 70px;font-size:30px;
 }
 
 .odd-container,
@@ -58,8 +58,10 @@ p {
 
 .navbar-brand,
 .navbar-nav .nav-link.active {
+  font-size:25px; font-weight: lighter;
   color: var(--Ivory);  testo barra
 }
+.navbar-brand{font-family: 'Croissant One', cursive;}
 
 .dropdown-menu {
   animation: 0.5s slideup;
@@ -151,7 +153,7 @@ a.footer-title {
   text-decoration: none;
   font-size: 20px;
   color: var(--green);
-  font-family:Verdana;
+  font-family: 'Croissant One', cursive;
   text-transform: uppercase;
 }
 
@@ -181,7 +183,6 @@ ul.social-buttons li a:hover {
 
 ul.social-buttons li a {
   font-size: 20px;
-  font-family: fantasy;
   line-height: 40px;
   display: block;
   width: 40px;
@@ -199,7 +200,6 @@ footer .quick-links {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family:"fantasy";
 }
 
 .copyright {
@@ -218,5 +218,5 @@ footer .quick-links {
 }
 
 .card-title{
-  min-width: 150px;
+  min-width: 150px; font-size:20px
 }
