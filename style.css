@@ -24,7 +24,7 @@ h5{color:DarkSlateGray;
   font-family: 'Croissant One', cursive;
   },
 h6{color: var(--DarkSlateGray);testo
-  text-align: center; font-size:30px},
+  text-align: center; font-size:25px},
 p {color: var(--DarkSlateGray);testo
   text-align: center;}
 #logo-che{ width: 120px; height: auto; }
